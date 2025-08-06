@@ -1,12 +1,23 @@
 import { useState } from 'react'
 import './App.css'
+import Header from './components/Header.jsx'
+import Home from './pages/Home.jsx'
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import Wizards from './pages/Wizards.jsx'
+import Spells from './pages/Spells.jsx'
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-     <p>Hey</p>
+      <Header />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/wizards" element={<Wizards />} />
+          <Route path="/spells" elements={<Spells />} />
+        </Routes>
+      </BrowserRouter>  
     </>
   )
 }
