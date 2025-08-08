@@ -4,4 +4,17 @@
   padding: 2rem;
   text-align: center;
 }
-
+body {
+  font-family: 'IM Fell English SC', serif;
+}
+body {
+  margin: 0;
+  background: #121212;
+  color: #e5e5e5;
+  text-align: center;
+}
+h1, h2{
+  font-size: 3rem;
+  margin-top: 1rem;
+  color: #f5c518; 
+}

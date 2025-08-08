@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react" ;
 import WizardList from "../components/WizardsList";
 
+// put search here
 
 function Wizards() {
     const [wizards, setWizards] = useState([]);

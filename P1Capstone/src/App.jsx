@@ -5,7 +5,7 @@ import Home from './pages/Home.jsx'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Wizards from './pages/Wizards.jsx'
 import Spells from './pages/Spells.jsx'
-
+import Search from './components/Search'
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/wizards" element={<Wizards />} />
-          <Route path="/spells" elements={<Spells />} />
+          <Route path="/spells" element={<Spells />} />
         </Routes>
       </BrowserRouter>  
     </>
