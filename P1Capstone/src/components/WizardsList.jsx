@@ -3,7 +3,7 @@ import WizardsCard from './WizardsCard'
 
 function WizardsList({wizards}){
     return (
-        <ul className="cards">
+        <ul>
             {wizards.map((wizard) => (
                 <WizardsCard key={wizard.id} wizard={wizard} />
             ))}

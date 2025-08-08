@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import './WizardCard.css'
 import Header from './components/Header.jsx'
 import Home from './pages/Home.jsx'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'

@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react" ;
 import WizardList from "../components/WizardsList";
+import Search from "../components/Search"
 
-// put search here
 
 function Wizards() {
     const [wizards, setWizards] = useState([]);
@@ -10,11 +10,17 @@ function Wizards() {
         .then((r) => r.json())
         .then(setWizards);
     }, []);
+
+    const onSearch=(value) =>{
+        console.log(value)
+    }
     return (
-        <>
+        <div>
             Welcome to the Wonderful World of Wizards
+            <Search onSearch={onSearch}/>
             <WizardList wizards={wizards}></WizardList>
-        </>
+            
+        </div>
     )
 }
 export default Wizards;

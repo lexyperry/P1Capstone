@@ -3,28 +3,31 @@ import React, {useState} from "react";
 function WizardsCard({wizard}){
     const [showInfo, setShowInfo] = useState(false);
 
-    debugger;
-
     return (
-
-        <li className="card">
-            <img src={wizard.image} alt={wizard.name} />
-            <h4>{wizard.name}</h4>
-            <p>{wizard.house}</p>
-            <p className="wizard-card"></p>
-            <button
-                className={showInfo ? "primary" : ""}
-                onClick={() => setShowInfo(!showInfo)}>
-                    Revealio more Infolio
+        <div className="wizard-list">
+            <ul className="wizard-card">
+                <img src={wizard.image} alt={wizard.name} />
+                <h3>{wizard.name}</h3>
+                <p>{wizard.house}</p>
+                <button
+                    className={showInfo ? "primary" : ""}
+                    onClick={() => setShowInfo(!showInfo)}>
+                        Revealio more Info
                 </button>
-            {showInfo && (
-                <p>
-                    {wizard.patronus == "" ? "Unknown" : wizard.patronus}
-                </p>
-                
-            )}
-        <br />
-        </li>
+                {showInfo && (
+                    <>
+                    <p>
+                        Patronus: {wizard.patronus == "" ? "Unknown" : wizard.patronus}
+                    </p>
+                    <p>
+                        Wand wood: {wizard.wand.wood == "" ? "Unknown" : wizard.wand.wood}
+                    </p>
+                    </>
+
+                )}
+            <br />
+            </ul>
+        </div>
     )
     
 }
