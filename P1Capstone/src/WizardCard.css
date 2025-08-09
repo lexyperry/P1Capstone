@@ -3,17 +3,38 @@
 }
 
 .wizard-card {
-  background: linear-gradient(145deg, #1e1e1e, #292929);
   border: 4px solid #d4af37;
+  box-shadow: 0 0 12px #d4af37;
+  background: linear-gradient(145deg, #1e1e1e, #f9f9f8d9);
   border-radius: 20px;
   padding: 1rem;
   margin: 1rem auto;
   max-width: 300px;
-  box-shadow: 0 0 12px #d4af37;
   color: #fff;
   transition: transform 0.3s ease;
   padding: auto;
 }
+
+.wizard-card-hufflepuff {
+  border-color: #ffdb58;
+  box-shadow: 0 0 12px #ffdb58;
+}
+
+.wizard-card-gryffindor {
+  border-color: #7f0909;
+  box-shadow: 0 0 12px #7f0909;
+}
+
+.wizard-card-slytherin {
+  border-color: #2a623d;
+  box-shadow: 0 0 12px #2a623d;
+}
+
+.wizard-card-ravenclaw {
+  border-color: #0e1a40; 
+  box-shadow: 0 0 12px #0e1a40;
+}
+
 .wizard-card:hover {
   transform: scale(1.05);
 }
@@ -30,7 +51,22 @@
   color: #f5c518;
 }
 
-.wizard-card p {
+.wizard-p-hufflepuff  {
   font-size: 1.1rem;
-  color: white;
+  color: #ffdb58;
+}
+
+.wizard-p-gryffindor {
+  font-size: 1.1rem;
+  color: #7f0909;
+}
+
+.wizard-p-slytherin {
+  font-size: 1.1rem;
+  color: #2a623d;
+}
+
+.wizard-p-ravenclaw {
+  font-size: 1.1rem;
+  color: #0e1a40;
 }
