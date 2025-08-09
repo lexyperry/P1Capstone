@@ -6,7 +6,9 @@ function WizardsCard({wizard}){
     return (
         <div className="wizard-list">
             <ul className="wizard-card">
-                <img src={wizard.image} alt={wizard.name} />
+                <img src={wizard.image} 
+                    alt={`No image for ${wizard.name}`}
+                    loading="lazy"/>
                 <h3>{wizard.name}</h3>
                 <p>{wizard.house}</p>
                 <button

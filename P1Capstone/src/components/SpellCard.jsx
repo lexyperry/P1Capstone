@@ -2,10 +2,10 @@ import React from 'react';
 
 function SpellCard({ spell }) {
     return(
-        <li className='spell-card'>
+        <ul className='spell-card'>
             <h3>{spell.name}</h3>
             <p>{spell.description}</p>
-        </li>
+        </ul>
     );
 }
 
